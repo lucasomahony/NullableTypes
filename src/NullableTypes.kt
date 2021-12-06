@@ -1,5 +1,10 @@
-fun greet(name: String) : String {
-    return "hello $name"
+fun greet(name: String?) : String {
+    if (name != null) {
+        return "hello $name"
+    }
+    else {
+        return "hello world"
+    }
 }
 
 fun main(args: Array<String>){
@@ -10,5 +15,9 @@ fun main(args: Array<String>){
         var greeting = greet(name)
         println(greeting)
     }
+
+    val x = greet(null)
+
+    println(x)
 }
 
