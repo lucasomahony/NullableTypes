@@ -1,4 +1,4 @@
-fun greet(name: String) : String {
+fun greet(name: String?) : String {
     return "hello $name"
 }
 
