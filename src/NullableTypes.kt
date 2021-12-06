@@ -1,10 +1,6 @@
 fun greet(name: String?) : String {
-    if (name != null) {
-        return "hello $name"
-    }
-    else {
-        return "hello world"
-    }
+    val x = name ?: "hello world"
+    return x
 }
 
 fun main(args: Array<String>){
@@ -20,4 +16,3 @@ fun main(args: Array<String>){
 
     println(x)
 }
-
