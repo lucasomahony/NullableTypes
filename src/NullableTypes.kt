@@ -6,7 +6,9 @@ fun main(args: Array<String>){
     println("Please type your name")
     val name = readLine()
 
-    val greeting = greet(name)
-    println(greeting)
+    if (name != null) {
+        var greeting = greet(name)
+        println(greeting)
+    }
 }
 
